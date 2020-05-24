@@ -30,10 +30,12 @@ function fetchMetadata(id) {
       .then(res => res.text())
       .then(body => {
         jsonStr = extractConfigData(body);
+        if( jsonStr == '') {
+          reject('page error');
+        }
         jsonObj = JSON.parse(jsonStr)
         jsonObj = JSON.parse( jsonObj['args']['player_response']);
         //console.log( JSON.parse( jsonObj['args']['player_response']));
-
         fulfill(jsonObj);
       })
     });
