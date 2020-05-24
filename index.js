@@ -52,7 +52,9 @@ module.exports = {
           function (d) {
             fulfill( d);
           }
-        );
+        ).catch(function(error) {
+          reject(error);
+        });
       });
     }
 };
