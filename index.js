@@ -37,7 +37,9 @@ function fetchMetadata(id) {
         jsonObj = JSON.parse( jsonObj['args']['player_response']);
         //console.log( JSON.parse( jsonObj['args']['player_response']));
         fulfill(jsonObj);
-      })
+      }).catch(function(error) {
+        reject("parsing error");
+      });
     });
 }
 

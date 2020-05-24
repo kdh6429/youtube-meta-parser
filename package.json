@@ -1,6 +1,6 @@
 {
   "name": "youtube-meta-parser",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Parsing youtube metat data without google api",
   "main": "index.js",
   "scripts": {
