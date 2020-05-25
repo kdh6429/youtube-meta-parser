@@ -1,6 +1,6 @@
 # youtube-meta-parser
 A module to extract meta information from YouTube page.
-This is not required any google api and extract the data from youtube view page.
+This is not required any google api but extract the data from youtube view page.
 
 ## Install
 ```
